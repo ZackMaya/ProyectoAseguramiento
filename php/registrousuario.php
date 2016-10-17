@@ -8,6 +8,7 @@
 <head>
   <meta charset="utf-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Registro usuario</title>
+
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/estilo.css">
@@ -81,6 +82,13 @@
 				<label for="edad">Edad</label>
 				<input class="form-control" name="edad" type="text" required="required" id="edad" placeholder="Edad" tabindex="6" title="Edad">
 			</div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" required="required" name="opciones" id="opciones_2" value="opcion_2">
+          <a href="../AvisoPrivacidad/AvisoDePrivacidad.html" target="_blank">Acepto Terminos y Condiciones</a>
+        </label>
+      </div>
 		
        	<div class="col-lg-12 ">
 				<br>
