@@ -50,12 +50,12 @@ if(!isset($_SESSION["usuario_email"])){
 	        <img src="../Images/Logo15.png" width="20%" height="20%">
 	      </a>
 	    </div>
-	  </section><br><br><br>
+	  </section><br>
 
 <div class="container">
   <div class="row" style="margin-top:20px">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-      <form action = "registrarInstitucion.php" method = "post">
+      <form action = "registrarInstitucionUsuario.php" method = "post">
       <input type="hidden" name="submitted" value="true">
         <fieldset>
          <h2>Modo Usuario de alta una institución</h2>
@@ -131,10 +131,6 @@ if(!isset($_SESSION["usuario_email"])){
   </div>
 </div><br><br><br><br>
 
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
 <!-- Footer -->
 	<footer class="footer-distributed">
 			<div class="footer-left">

@@ -18,47 +18,12 @@
       <div class="container">
 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
-            <span class="sr-only">Desplegar / Ocultar Menú</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a href="../index.php" class="navbar-brand">Inicio</a>
         </div>
 
         <!-- MENU -->
-        <div class="collapse navbar-collapse" id="navegacion">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                Administrador<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Iniciar sesión</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                Usuario<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Enviar correo</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                Acerca de<span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Manual de Usuario</a></li>
-                <li><a href="#">Ayuda</a></li>
-              </ul>
-            </li>
-          </ul>
-
+        
         </div>
-      </div>
     </nav>
   </header>
 

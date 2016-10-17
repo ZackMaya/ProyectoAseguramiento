@@ -4,7 +4,7 @@ include('conexion.php');
 
     $email=$_POST["email"];
     $password=$_POST["password"];
-    if(!strcmp($_POST['email'], "ingnetozack@gmail.com") && !strcmp($_POST['password'],"admin")){
+    if(!strcmp($_POST['email'], "admin@gmail.com") && !strcmp($_POST['password'],"admin")){
         header('Location: panelAdmin.php');
      }else{
         require("conexion.php");
