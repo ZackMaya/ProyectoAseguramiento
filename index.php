@@ -70,7 +70,7 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="./php/registrousuario.php">Registrarse</a></li>
-                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="./php/sesion.php">Iniciar Sesión</a></li>
               </ul>
             </li>
             <li>

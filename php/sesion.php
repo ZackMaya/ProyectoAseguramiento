@@ -1,6 +1,6 @@
 <?php
-	session_start();
-	session_destroy();
+  session_start();
+  session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -43,69 +43,47 @@
     </div>
   </section><br><br><br>
 
-
-<div class="container">
-  <div class="row" style="margin-top:20px">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-      <form action = "loginregistro.php" method = "post">
+<!-- Se llama al estilo de Bootstrap-->
+   <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <!--Se llama al login del usuario-->
+      <form action = "login.php" method = "POST">
       <input type="hidden" name="submitted" value="true">
+
         <fieldset>
-         <h2>Por favor registrate para aportar una institución</h2>
-  			<br><br>
-  			<hr>
+          <h2>Login Usuario Registrado<br><br>
+            <div class="form-group">
+               <input type = "text" name = "email" id="email" placeholder = "Corre Electrónico" title = "Se necesita un usuario" required="required" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+               <input type = "password" name = "password" id="password" placeholder = "Password" title = "Se necesita un password" required="required" class="form-control input-lg">
+            </div>
 
-  			<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
 
-			<!--Nombre de usuario-->	  
-			<div class="form-group">
-				<label for="nombreUsuario">Nombre de Usuario</label>
-				<input class="form-control" name="nombre" type="text" required="required" placeholder="Nombre y Apellidos" tabindex="1" title="Nombre completo">
-			</div>
+           <div class="row">
+            
+            <div class="col-xs-3 col-sm-3 col-md-3">
+              <input type="submit" name="Submit" value="Aceptar" class="btn btn-lg btn-success btn-block">
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3"> <a href="registrousuario.php"  class="btn btn-lg btn-primary btn-block">Registrate</a> 
+            </div>
 
-					
-			<!--Correo Email-->
-			<div class="form-group">
-					<label for="email">Correo</label>
-					<input class="form-control" name="email" type="email" required="required"  placeholder="E-mail" tabindex="5" title="Email">
-			</div>
+            <div class="col-xs-3 col-sm-3 col-md-3"> <a href="../index.php"  class="btn btn-lg btn-primary btn-block">Regresar</a> 
+            </div>
 
-			<!--contraseña-->
-			<div class="form-group">
-					<label for="password">Contraseña</label>
-					<input class="form-control" name="password" type="password" required="required" placeholder="Contraseña" tabindex="6" title="Contraseña">
-			</div>
-
-										
-			<!--Edad-->
-			<div class="form-group">
-				<label for="edad">Edad</label>
-				<input class="form-control" name="edad" type="text" required="required" id="edad" placeholder="Edad" tabindex="6" title="Edad">
-			</div>
-		
-       	<div class="col-lg-12 ">
-				<br>
-			<div class="col-xs-3 col-sm-3 col-md-3">
-				<input type="submit" tabindex="7" name="aceptar" value="Aceptar" class="btn btn-lg btn-success btn-block" class="btn btn-default">
-			</div>
-
-			<div class="col-xs-3 col-sm-3 col-md-3"> 
-				<input type="reset" tabindex="8" class="btn btn-lg btn-primary btn-block" class="col-xs-6 col-sm-6 col-md-6" value="Borrar">
-			</div>
-
-			<div class="col-xs-3 col-sm-3 col-md-3"> <a href="../index.php"  class="btn btn-lg btn-primary btn-block">Regresar</a> 
-	        </div>
-			<input type="hidden" name="estado" value="1">
-		</div>									
+          </div>
         </fieldset>
       </form>
-    </div>
   </div>
-</div>
-
-
 
 
 <br><br><br>
+<br><br><br><br>
+
+<br><br><br>
+<br><br><br><br>
+
+<br><br><br>
+<br><br><br><br><hr>
 
   
 <!-- Footer -->
