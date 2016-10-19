@@ -1,3 +1,5 @@
 
-# archivo oculto que genera MacOS
+# archivo oculto que genera MacOS.
 .DS_Store
+# archivo de respaldo/temporal innecesario en el repositorio.
+documentacion/modeloER_institusiones.mwb.bak
