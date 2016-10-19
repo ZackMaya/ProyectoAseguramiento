@@ -125,41 +125,8 @@
         <!-- contenido informacion adicional -->
         <div class="row">
           <div id="info1" class="col-xs-12 well oculto">
-                <div class="divInformacion">
-                  <center><h2>Instituciones de Desarrollo de Software</h2></center>
-                  <center><table border="2">
-                    <tbody>
-                      <tr class="encabezado">
-                        <td>Institución</td>
-                        <td>Descripción</td>
-                        <td>País</td>
-                        <td>Ciudad</td>
-                        <td>Número</td>
-                        <td>Avenida</td>
-                        <td>Calle</td>
-                      </tr>
-                        <?php
-                          include('./php/conexion.php');
-                          $query="SELECT * FROM institucion";
-                          $resultado=$con->query($query);
-                          while($row=$resultado->fetch_assoc()){
-                        ?>
-                      <tr>
-                        <td><?php echo $row['nombre'];?></td>
-                        <td><?php echo $row['descripcion'];?></td>
-                        <td><?php echo $row['pais'];?></td>
-                        <td><?php echo $row['ciudad'];?></td>
-                        <td><?php echo $row['numero'];?></td>
-                        <td><?php echo $row['avenida'];?></td>
-                        <td><?php echo $row['calle'];?></td>
-                      </tr>
-                        <?php
-                          }
-                        ?>
-                    </tbody>
-                  </table>
-                  </center>
-              </div>
+                
+          </div>
           </div>
           <div id="info2" class="col-xs-12 well oculto">
             <p>Texto 2</p>
