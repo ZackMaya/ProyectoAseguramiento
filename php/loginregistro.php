@@ -8,18 +8,9 @@ include('conexion.php');
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$edad=$_POST['edad'];
-
-
-//Valida la edad
-	if($edad<=17){
-		//se valida la edad y se manda mensaje de requerido
-		header('Location: maledad.php');
-		echo "La edad es menor a la requerida";
-	}
 
 //Valida el email si ya esta registrado
- $selesql = "SELECT * FROM persona WHERE email='$email'";
+ $selesql = "SELECT * FROM usuario WHERE correo='$email'";
 
  $resultado= $con->query($selesql);
 
@@ -32,7 +23,7 @@ $edad=$_POST['edad'];
 
 else{
 
-$sqlinsert ="INSERT INTO persona (email,nombre,password,edad) VALUES('$email','$nombre','$password','$edad')";
+$sqlinsert ="INSERT INTO usuario (nombre,correo,contrasenna) VALUES('$nombre','$email','$password')";
 
 if(!mysqli_query($con,$sqlinsert)){
 die('error de conexion...');

@@ -77,11 +77,11 @@
 			</div>
 
 										
-			<!--Edad-->
+			<!--Edad
 			<div class="form-group">
 				<label for="edad">Edad</label>
 				<input class="form-control" name="edad" type="text" required="required" id="edad" placeholder="Edad" tabindex="6" title="Edad">
-			</div>
+			</div>-->
 
       <div class="radio">
         <label>
