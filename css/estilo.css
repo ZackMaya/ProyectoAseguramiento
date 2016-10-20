@@ -1,179 +1,85 @@
-/*estilo tabla*/
-
-	table {
-	  border-collapse: collapse;
-	  width: 100%;
-	}
-	th, td {
-	  padding: 0.5rem;
-	  border: 1px solid #ccc;
-
-	}
-
-	.encabezado{
-	  padding: 0.5rem;
-	  background: green;
-	  color: white;
-	  text-align: center;
-	}
-
-	.divInformacion{
-	width: 95%;
-	background: transparent;
-	padding: 15px;
-	margin: 5px auto;
-	border: 3px;
-	}
-
-	.divInformacion h1,h2,h3,h4,h5{
-	color:black;
-	}
-
-
-
-	#busqueda{
-		width: 90%;
-		height: auto;
-		background-color: transparent;
-		padding-top: 5%;
-		padding-bottom: 3%;
-	}
-
-
-	
-
-.footer-distributed{
-	background-color:  #151515;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 10px 55px;
+.navbar{
+	margin-bottom: 0;
+	background: #4B8A08;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+.navbar .container .navbar-header a{
+	color: #FFFFFF;
 }
 
-/* Footer izquierdo */
-.footer-distributed .footer-left{
-	width: 40%;
+.nav .dropdown .dropdown-toogle{
+	color: #FFFFFF;
 }
 
-/* Logo */
-.footer-distributed img{
-	margin: 4px;
-    margin-top: 20px;
-    margin-right: 3px;
+.jumbotron{
+	background: #FFFFFF;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #999;
 }
 
-.footer-distributed h3 span{
-	color:  #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 10px 0 10px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 15px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Centro */
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-/*iconos ubicación*/
-.footer-distributed .footer-center i{
-	font-size: 25px;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
-
-/*dirección*/
-.footer-distributed .footer-center p span{
-	display:inline-block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:1.5;
-}
-
-/* Footer Derecho */
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
+.main{
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-/*iconos footer*/
-.footer-distributed .footer-icons{
-	margin-top: 25px;
+.post{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
 }
 
-@media (max-width: 880px) {
+.post .contenedor-botones{
+	width: 100%;
+}
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
+.pie {
+	margin-bottom: 0;
+	background: #4B8A08;
+	color: #FFFFFF;
+}
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
+.pie a{
+	color: #FFFFFF;
+}
 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
+/*estilo tabla*/
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+
+}
+
+.encabezado{
+  padding: 0.5rem;
+  background: green;
+  color: white;
+  text-align: center;
+}
+
+.divInformacion{
+width: 90%;
+background: transparent;
+padding: 15px;
+margin: 5px auto;
+border: 3px;
+}
+
+.divInformacion h1,h2,h3,h4,h5{
+color:black;
+}
+
+
+
+#busqueda{
+	width: 90%;
+	height: auto;
+	background-color: transparent;
+	padding-top: 5%;
+	padding-bottom: 3%;
 }
