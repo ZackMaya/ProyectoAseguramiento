@@ -76,13 +76,6 @@
 					<input class="form-control" name="password" type="password" required="required" placeholder="Contraseña" tabindex="6" title="Contraseña">
 			</div>
 
-										
-			<!--Edad
-			<div class="form-group">
-				<label for="edad">Edad</label>
-				<input class="form-control" name="edad" type="text" required="required" id="edad" placeholder="Edad" tabindex="6" title="Edad">
-			</div>-->
-
       <div class="radio">
         <label>
           <input type="radio" required="required" name="opciones" id="opciones_2" value="opcion_2">
@@ -117,40 +110,18 @@
 
   
 <!-- Footer -->
-  <footer class="footer-distributed">
-      <div class="footer-left">
-        <p class="footer-links">
-          <a href="logout.php">Inicio</a>
-          ·
-          <a href="panelAdmin.php">Panel Admin</a>
-          ·
-          <a href="institucion.php">Insertar Institución</a>
-          ·
-          <a href="verinstitucion.php">Ver Institución</a>
-          ·
-          <a href="buscarinstitucion.php">Buscar Institución</a>
-          ·
-          <a href="logout.php" class="button special">Cerrar Sesión</a>
-        </p>
-
-        <p class="footer-company-name"> &copy; 2016 Instituciones-UACM</p>
-      </div>
-
-      <div class="footer-center">
-        <div> 
-          <p><span><img src="../Images/mapablanco.png" width="25px" height="25px"> Calle Prolongación San Isidro 151, Iztapalapa, San Lorenzo Tezonco, 09790 Ciudad de México, D.F.</span>Ciudad de México, México</p>
-        </div><br>
-
-        <div>
-          <p><img src="../Images/telefonoblanco.png" width="25px" height="25px"> 01 55 5850 1901</p>
+ <footer>
+      <div class="pie">
+        <div class="row">
+          <div class="col-xs-6">
+            <p>Aseguramiento de la Calidad del Software | UACM - SLT | 2016</p>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-inline text-right">
+              <li><a href="#">Contacto e-mail</a></li>
+            </ul>
+          </div>
         </div>
-
-        </div>
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>Instituciones-UACM</span>
-          Sitio web para encontrar información clara y preciso acerca de las instituciones, empresas y otros lugares que interesen y competan de manera directa a los estudiantes de Ingeniería de Software de la UACM, así como tambien al público en general por área de conocimiento.
-        </p>
       </div>
     </footer>
 

@@ -12,7 +12,7 @@
 	}
 	else{
 
-	$sqlselect = "DELETE FROM institucion WHERE nombre='$institucion'";
+	$sqldelete = "DELETE FROM institucion WHERE nombre='$institucion'";
 	echo "<script>alert('Comentario Guardado')</script>";
     header('Location: panelAdmin.php');
 	}

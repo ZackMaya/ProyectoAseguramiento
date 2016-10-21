@@ -10,7 +10,7 @@ include('conexion.php');
         require("conexion.php");
         
 
-        $emailsql = "SELECT * FROM persona WHERE email='$email' and password='$password'";
+        $emailsql = "SELECT * FROM usuario WHERE correo='$email' and contrasenna='$password'";
         $res= $con->query($emailsql);
 
         if($res->num_rows>0){

@@ -79,8 +79,21 @@ $_SESSION["usuario_email"]=$email;
 
 
 	<h5>Te haz registrado satisfactoriamente</h5>
-	
-
+	<!-- Footer -->
+ <footer>
+      <div class="pie">
+        <div class="row">
+          <div class="col-xs-6">
+            <p>Aseguramiento de la Calidad del Software | UACM - SLT | 2016</p>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-inline text-right">
+              <li><a href="#">Contacto e-mail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
 

@@ -22,7 +22,21 @@ session_destroy();
 	La contraseña no es correcta.<br>
 	Intenta de nuevo</h2></center>
 	<hr>
-
+<!-- Footer -->
+ <footer>
+      <div class="pie">
+        <div class="row">
+          <div class="col-xs-6">
+            <p>Aseguramiento de la Calidad del Software | UACM - SLT | 2016</p>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-inline text-right">
+              <li><a href="#">Contacto e-mail</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 	<script language="javascript">location.href = "sesion.php";</script>
 </body>
 </html>
