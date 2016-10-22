@@ -164,7 +164,7 @@
             </p>
             <div class="contenedor-botones">
               <a href="#" class="btn btn-primary">Comentarios</a>
-              <a href="login.html" class="btn btn-success">Editar</a>
+              <a href="./php/loginAdmin.php" class="btn btn-success">Editar</a>
             </div>
           </article>
         </section>
