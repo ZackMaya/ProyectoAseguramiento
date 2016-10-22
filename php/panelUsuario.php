@@ -28,7 +28,7 @@ if(!isset($_SESSION["usuario_email"])){
 	        <div class="collapse navbar-collapse" id="navegacion">
 	          <ul class="nav navbar-nav">
 	            <li id="menuprincipal"><a href="panelUsuario.php">Panel Usuario</a></li>
-	            <li><a href="#" class="button special"> <?php include('conexion.php');
+	            <li><a href="institucionXusuario.php" class="button special"> <?php include('conexion.php');
 							$email=$_SESSION["usuario_email"];
 							$query="SELECT * FROM usuario WHERE correo='$email'";
 							$resultado=$con->query($query);

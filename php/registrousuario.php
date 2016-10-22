@@ -21,6 +21,7 @@
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
+        <div id="menuprincipal">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
             <span class="sr-only">Desplegar / Ocultar Menú</span>
@@ -28,12 +29,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="../index.php" class="navbar-brand">Inicio</a>
+          <a href="../index.php" class="navbar-brand">Consulta Instituciones</a>
         </div>
-
- 
         </div>
+      </div>
     </nav>
+  </header>
 
   <section class="jumbotron">
     <div class="container" align="center">

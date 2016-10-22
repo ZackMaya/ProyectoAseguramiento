@@ -13,17 +13,22 @@
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body background="">
-  <header>
+<header>
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
+        <div id="menuprincipal">
         <div class="navbar-header">
-          <a href="../index.php" class="navbar-brand">Inicio</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+            <span class="sr-only">Desplegar / Ocultar Menú</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.php" class="navbar-brand">Consulta Instituciones</a>
         </div>
-
-        <!-- MENU -->
-        
         </div>
+      </div>
     </nav>
   </header>
 

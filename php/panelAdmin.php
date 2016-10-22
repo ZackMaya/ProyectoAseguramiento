@@ -13,28 +13,50 @@ session_start();
     	<link rel="stylesheet" href="../css/bootstrap.css">
       	<link rel="stylesheet" href="../css/estilos.css">
       	<link rel="stylesheet" href="../css/estilo.css">
+      	 <!--Query-->
+  		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 	</head>
-	<body>
+<body>
 
 <header>
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
+        <div id="menuprincipal">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+            <span class="sr-only">Desplegar / Ocultar Menú</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="panelAdmin.php" class="navbar-brand">Panel Administrador</a>
+        </div>
+        </div>
+
         <!-- MENU -->
         <div class="collapse navbar-collapse" id="navegacion">
           <ul class="nav navbar-nav">
-            <li id="menuprincipal"><a href="panelAdmin.php">Panel Admin</a></li>
-			<li><a href="institucion.php">Insertar Institución</a></li>
-			<li><a href="verinstitucion.php">Ver Institución</a></li>
-			<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
-			<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-          </ul>
-
- 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button">
+                  Instituciones<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+					<li><a href="institucion.php">Insertar Institución</a></li>
+                  	<li class="divider"></li>
+					<li><a href="verinstitucion.php">Ver Institución</a></li>
+                  	<li class="divider"></li>
+					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
+			</ul>
         </div>
       </div>
     </nav>
-</header>			
+  </header>		
 
 	<section class="jumbotron">
 		    <div class="container" align="center">
@@ -80,5 +102,10 @@ session_start();
         </div>
       </div>
     </footer>
-	</body>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+</body>
 </html>
