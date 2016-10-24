@@ -163,33 +163,7 @@
             <p class="post-contenido text-justify">
 
             *AQUÍ VA LA DESCRIPCION*<br>
-            <!--
-            Todavia no se ha estipulado como e mostrará bien la información si así fuera es necesario es siguiente Query
-
-            "SELECT * FROM institucion,pais,areaswebook WHERE institucion.pais=pais.nombre AND intitucion.area=areaswebook.nombrearea";
-     --><!--
-            <?php
-              include('./php/conexion.php');
-              $query="SELECT * FROM institucion";
-              $resultado=$con->query($query);
-              while($row=$resultado->fetch_assoc()){
-            ?>
-            <br><hr>
-              <h4>Nombre:</h4><?php echo $row['nombre'];?>
-              <h4>Telefono:</h4><?php echo $row['telefono'];?>
-              <h4>Correo:</h4> <?php echo $row['correo'];?>
-              <h4>URL:</h4> <?php echo $row['url_pagina'];?>
-              <h4>Imagen:</h4> <?php echo $row['url_imagen'];?>
-              <h4>Descripción:</h4> <?php echo $row['descripcion'];?>
-       
-            En esta parte falta mostrar el pais y area pero como son de otra area y no se ha mencionado como se mostrará la 
-            información de las instituciones de esta parte, esto queda pendiente 
-             <h4>País:</h4> <?php echo $row['nombrepais'];?>
-            <h4>Área:</h4> <?php echo $row['nombrearea'];?>
-            <?php
-              }
-            ?>       
-              -->
+    
             </p>
             <div class="contenedor-botones">
               <a href="#" class="btn btn-primary">Comentarios</a>
@@ -223,4 +197,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </body>
+
+
 </html>
+
