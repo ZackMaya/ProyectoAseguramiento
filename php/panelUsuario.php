@@ -62,7 +62,7 @@ if(!isset($_SESSION["usuario_email"])){
   			<br><br>
   			<hr>
 
-  			<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
+  					<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
 
 			<!--Nombre de institución-->	  
 			<div class="form-group">
@@ -78,35 +78,59 @@ if(!isset($_SESSION["usuario_email"])){
 
 					
 			<!--País de la Institución-->
+			<p>(1) México.</p>
+			<p>(2) Estados Unidos.</p>
 			<div class="form-group">
 					<label for="pais">País</label>
-					<input class="form-control" name="pais" type="text" required="required"  placeholder="País" tabindex="6" title="País">
+					<input class="form-control" name="pais" type="text" required="required"  placeholder="Seleccione País" tabindex="6" title="País">
 			</div>
 
-			<!--Ciudad-->
+			<!--Telefono-->
 			<div class="form-group">
-					<label for="ciudad">Ciudad</label>
-					<input class="form-control" name="ciudad" type="text" required="required" placeholder="Ciudad" tabindex="6" title="Ciudad">
+					<label for="telefono">Telefono</label>
+					<input class="form-control" name="telefono" type="text" required="required" placeholder="Telefono" tabindex="6" title="Telefono">
 			</div>
 
-			<!--Número-->
+			<!--Correo-->
 			<div class="form-group">
-				<label for="numero">Número</label>
-				<input class="form-control" name="numero" type="text" required="required"  placeholder="Número" tabindex="6" title="número">
-			</div>
-
-
-			<!--Avenida-->
-			<div class="form-group">
-				<label for="avenida">Avenida</label>
-				<input class="form-control" name="avenida" type="text" required="required"  placeholder="Avenida" tabindex="6" title="avenida">
+				<label for="Correo">Correo</label>
+				<input class="form-control" name="correo" type="text" required="required"  placeholder="Correo" tabindex="6" title="correo">
 			</div>
 
 
-			<!--Calle-->
+			<!--Área-->
 			<div class="form-group">
-				<label for="calle">Calle</label>
-				<input class="form-control" name="calle" type="text" required="required"  placeholder="Calle" tabindex="6" title="calle">
+				<label for="area">Área</label>
+				<input class="form-control" name="area" type="text" required="required"  placeholder="Seleccione el Área" tabindex="6" title="area">
+				<section style="width: 80%">
+					<p>(1) Requisitos de Software</p>
+		            <p>(2) Diseño de Software</p>
+		            <p>(3) Construcción de Software</p>
+		            <p>(4) Pruebas de Software</p>
+		            <p>(5) Mantenimiento de Software</p>
+		            <p>(6) Gestión de la configuración</p>
+		            <p>(7) Gestión de la Ingeniería de Software</p>
+		            <p>(8) Proceso de Ingeniería de Software</p>
+		            <p>(9) Herramientas y métodos de la Ingeniería de Software</p>
+		            <p>(10)Calidad del Software</p>
+		            <p>(11)Práctica Profesional de la Ingeniería de Software</p>
+		            <p>(12)Economía de la Ingeniería de Software</p>
+		            <p>(13)Fundamentos de Computación</p>
+		            <p>(14)Fundamentos Matemáticos</p>
+		            <p>(15)Fundamentos de Ingeniería</p>
+	            </section>
+			</div>
+
+			<!--URL-->
+			<div class="form-group">
+				<label for="url">URL</label>
+				<input class="form-control" name="url" type="text" required="required"  placeholder="url" tabindex="6" title="url">
+			</div>
+
+			<!--URL Imagen-->
+			<div class="form-group">
+				<label for="imagen">URL-Imagen</label>
+				<input class="form-control" name="imagen" type="text"  placeholder="Imagen" tabindex="6" title="imagen *opcional">
 			</div>
 
 

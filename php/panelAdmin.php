@@ -42,17 +42,29 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-					<li><a href="institucion.php">Insertar Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="verinstitucion.php">Ver Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+        					<li><a href="institucion.php">Insertar Institución</a></li>
+                          	<li class="divider"></li>
+        					<li><a href="verinstitucion.php">Ver Institución</a></li>
+                          	<li class="divider"></li>
+        					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="nav navbar-nav">
-				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-			</ul>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button">
+                  Usuarios<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="verusuarios.php">Ver usuarios</a></li>
+                            <li class="divider"></li>
+                  <li><a href="eliminarusuario.php">Eliminar usuarios</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+              <li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
+             </ul>
         </div>
       </div>
     </nav>
@@ -67,21 +79,21 @@ session_start();
 		    </div>
 	</section>
 
+    <center>
+    <article class="post clearfix" style="width: 60%">
+      <h2 class="post-title">Administrador</h2>
+      <p class="post-contenido text-justify">En está aplicación podrás encontrar información relevante sobre intituciones relacionadas con las distintas materias que te encontraras a lo largo de la carrera, cualquier aclaración por favor de decirlas.<br>
+      
+      1.- El modo de Insertar instituciones, muestra un formulario donde se deberán llenar los campos correspondientes, si se tiene alguna duda sobre la dirección de la institución se tendrá en cuenta que algunos campos no son necesarios como, calle o avenida se puede obviar alguno según sea el caso del sitio de la institución.<br>
 
+      2.- Ver instituciones cuenta con la lista en una tabla de todas aquellas instituciones que se han registrado por parte del administrador<br>
 
-	<center><h5>Bienvenido al sitio de administrador, si eres nuevo administrador o tienes alguna duda sobre como manejarlo se describe en unos cuantos pasos sencillos:</h5>
+    	3.- Buscar instituciones, en este apartado se podrá buscar información de alguna institución por medio de algunos filtros para agilizar la búsqueda de información<br>
 
-	<br><br>
-	<p>1.- El modo de Insertar instituciones, muestra un formulario donde se deberán llenar los campos correspondientes, si se tiene alguna duda sobre la dirección de la institución se tendrá en cuenta que algunos campos no son necesarios como, calle o avenida se puede obviar alguno según sea el caso del sitio de la institución.</p>
-
-	<p>2.- Ver instituciones cuenta con la lista en una tabla de todas aquellas instituciones que se han registrado por parte del administrador</p>
-
-	<p>3.- Buscar instituciones, en este apartado se podrá buscar información de alguna institución por medio de algunos filtros para agilizar la búsqueda de información</p>
-
-	<p>4.- Cerrar sesión nos devuelve al inicio de la página cerrando la funcionalidad del administrador.</p>
-	</center>
-
-
+      4.- Cerrar sesión nos devuelve al inicio de la página cerrando la funcionalidad del administrador.</p>
+    </article>
+    </center>
+  
 
 <br><br><br><br><br>
 <br><br><br><br><br>

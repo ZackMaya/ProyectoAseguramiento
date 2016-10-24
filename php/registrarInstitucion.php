@@ -5,14 +5,15 @@
 
 	$nombre= $_POST['nombre'];
 	$pais= $_POST['pais'];
-	$ciudad=$_POST['ciudad'];
-	$numero= $_POST['numero'];
-	$avenida=$_POST['avenida'];
-	$calle= $_POST['calle'];
 	$descripcion=$_POST['descripcion'];
+	$telefono=$_POST['telefono'];
+	$correo=$_POST['correo'];
+	$area=$_POST['area'];
+	$url=$_POST['url'];
+	$imagen=$_POST['imagen'];
 
-	$sqlinsert = " INSERT INTO institucion (nombre,descripcion,pais,ciudad,numero,avenida,calle) 
-									VALUES ('$nombre','$descripcion','$pais','$ciudad','$numero','$avenida','$calle')";
+	$sqlinsert = " INSERT INTO institucion (nombre,telefono,correo, area, url_pagina, descripcion, url_imagen, pais) 
+					VALUES ('$nombre','$telefono','$correo','$area','$url','$descripcion','$imagen','$pais')";
       
     if(!mysqli_query($con,$sqlinsert)){
 	die('error de  insercion...');
