@@ -62,7 +62,7 @@ if(!isset($_SESSION["usuario_email"])){
   			<br><br>
   			<hr>
 
-  					<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
+  			<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
 
 			<!--Nombre de institución-->	  
 			<div class="form-group">

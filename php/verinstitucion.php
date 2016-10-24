@@ -53,6 +53,16 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button">
+                  Usuarios<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="verusuarios.php">Ver usuarios</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
 				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
 			</ul>
         </div>
@@ -87,12 +97,13 @@ session_start();
 				<tbody>
 					<tr class="encabezado">
 						<td>Institución</td>
+						<td>Telefono</td>
+						<td>Correo</td>
+						<td>URL</td>
+						<td>Imagen</td>
 						<td>Descripción</td>
 						<td>País</td>
-						<td>Ciudad</td>
-						<td>Número</td>
-						<td>Avenida</td>
-						<td>Calle</td>
+						<td>Área</td>
 					</tr>
 						<?php
 							include('conexion.php');
@@ -102,12 +113,13 @@ session_start();
 						?>
 					<tr>
 						<td><?php echo $row['nombre'];?></td>
+						<td><?php echo $row['telefono'];?></td>
+						<td><?php echo $row['correo'];?></td>
+						<td><?php echo $row['url_pagina'];?></td>
+						<td><?php echo $row['url_imagen'];?></td>
 						<td><?php echo $row['descripcion'];?></td>
 						<td><?php echo $row['pais'];?></td>
-						<td><?php echo $row['ciudad'];?></td>
-						<td><?php echo $row['numero'];?></td>
-						<td><?php echo $row['avenida'];?></td>
-						<td><?php echo $row['calle'];?></td>
+						<td><?php echo $row['area'];?></td>
 					</tr>
 						<?php
 							}

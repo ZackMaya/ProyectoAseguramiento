@@ -53,6 +53,16 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button">
+                  Usuarios<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="verusuarios.php">Ver usuarios</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
 				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
 			</ul>
         </div>

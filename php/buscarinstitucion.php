@@ -41,11 +41,21 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-          <li><a href="institucion.php">Insertar Institución</a></li>
-                    <li class="divider"></li>
-          <li><a href="verinstitucion.php">Ver Institución</a></li>
-                    <li class="divider"></li>
-          <li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+                    <li><a href="institucion.php">Insertar Institución</a></li>
+                              <li class="divider"></li>
+                    <li><a href="verinstitucion.php">Ver Institución</a></li>
+                              <li class="divider"></li>
+                    <li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button">
+                  Usuarios<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="verusuarios.php">Ver usuarios</a></li>
                 </ul>
               </li>
             </ul>

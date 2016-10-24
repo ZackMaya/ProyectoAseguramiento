@@ -9,12 +9,14 @@ session_start();
 		
 		<!--Codificación de caracteres especiales-->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		 <!-- Formulario elaborado con recursos Bootstrap-->
+		<!-- Formulario elaborado con recursos Bootstrap-->
     	<link rel="stylesheet" href="../css/bootstrap.css">
-      	<link rel="stylesheet" href="../css/estilos.css">
-      	<link rel="stylesheet" href="../css/estilo.css">
+     	<!--estilo-->
+     	<link rel="stylesheet" href="../css/estilo.css">
+     	<link rel="stylesheet" href="../css/estilos.css">
       	 <!--Query-->
   		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+
 	</head>
 <body>
 
@@ -42,11 +44,11 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-        					<li><a href="institucion.php">Insertar Institución</a></li>
-                          	<li class="divider"></li>
-        					<li><a href="verinstitucion.php">Ver Institución</a></li>
-                          	<li class="divider"></li>
-        					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+					<li><a href="institucion.php">Insertar Institución</a></li>
+                  	<li class="divider"></li>
+					<li><a href="verinstitucion.php">Ver Institución</a></li>
+                  	<li class="divider"></li>
+					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
                 </ul>
               </li>
             </ul>
@@ -61,49 +63,72 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
-              <li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-             </ul>
+				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
+			</ul>
         </div>
       </div>
     </nav>
   </header>		
 
-	<section class="jumbotron">
+
+		<section class="jumbotron">
 		    <div class="container" align="center">
 		      <a href="#" class="thumb">
 		        <img src="../Images/LogoUACMC.jpg" width="10%" height="10%" >
 		        <img src="../Images/Logo15.png" width="20%" height="20%">
 		      </a>
 		    </div>
-	</section>
+		 </section>
 
-    <center>
-    <article class="post clearfix" style="width: 60%">
-      <h2 class="post-title">Administrador</h2>
-      <p class="post-contenido text-justify">En está aplicación podrás encontrar información relevante sobre intituciones relacionadas con las distintas materias que te encontraras a lo largo de la carrera, cualquier aclaración por favor de decirlas.<br>
-      
-      1.- El modo de Insertar instituciones, muestra un formulario donde se deberán llenar los campos correspondientes, si se tiene alguna duda sobre la dirección de la institución se tendrá en cuenta que algunos campos no son necesarios como, calle o avenida se puede obviar alguno según sea el caso del sitio de la institución.<br>
+		 <br><br><br>
+		
+		<center>
+		<form action = "borrar.php" method = "post">
+      	<input type="hidden" name="submitted" value="true">
+			<input type="text" name="institucion"/>
+			<input type="submit" value="Eliminar Institución"/>
+		</form>
+		</center><br>
 
-      2.- Ver instituciones cuenta con la lista en una tabla de todas aquellas instituciones que se han registrado por parte del administrador<br>
+  			<!--Instituciones Registradas-->
+			<div class="divInformacion">
+			<center><h2>Usuarios Registrados</h2></center>
+			<center><table border="2">
+				<tbody>
+					<tr class="encabezado">
+						<td>Nombre</td>
+						<td>Email</td>
+						<td>Contraseña</td>
+						<td>Es Administrador</td>
+					</tr>
+						<?php
+							include('conexion.php');
+							$query="SELECT * FROM usuario";
+							$resultado=$con->query($query);
+							while($row=$resultado->fetch_assoc()){
+						?>
+					<tr>
+						<td><?php echo $row['nombre'];?></td>
+						<td><?php echo $row['correo'];?></td>
+						<td><?php echo $row['contrasenna'];?></td>
+						<td><?php echo $row['es_administrador'];?></td>
+					</tr>
+						<?php
+							}
+						?>
+				</tbody>
+			</table>
+			</center>
+			</div>
 
-    	3.- Buscar instituciones, en este apartado se podrá buscar información de alguna institución por medio de algunos filtros para agilizar la búsqueda de información<br>
+			
+			<!--Boton imprimir-->			
+			<center><input type="button" name="imprimir" value="Imprimir"  onClick="window.print();"/></center>
 
-      4.- Cerrar sesión nos devuelve al inicio de la página cerrando la funcionalidad del administrador.
+			<br><br><br><br><br><br><br><br><br><br><br><br>
 
-      5.- Usuario, esta funcionalidad es para borrar un usuario que se registre pero que no haga uso debido de la información que proporciona, como lo es:
-
-      a) Información mal intensionada.
-      b) Información falsa.
-      c) Información incorrecta
-      </p>
-    </article>
-    </center>
-  
-
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
+			<br><hr>
+  		
 <!-- Footer -->
  <footer>
       <div class="pie">
@@ -120,7 +145,7 @@ session_start();
       </div>
     </footer>
 
-  <script src="../js/jquery.js"></script>
+ <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 

@@ -4,19 +4,15 @@
 
 	$institucion= $_POST['institucion'];
 
-	$sqlselect = "SELECT * FROM institucion WHERE nombre ='$institucion'";
+	$sqlselect = "DELETE FROM institucion WHERE nombre ='$institucion'";
 
 	 if(!mysqli_query($con,$sqlselect)){
 	die('error de conexion o insercion...');
 
 	}
-	else{
-
-	$sqldelete = "DELETE FROM institucion WHERE nombre='$institucion'";
 	echo "<script>alert('Comentario Guardado')</script>";
     header('Location: panelAdmin.php');
 	}
-}
      
 
 ?>
