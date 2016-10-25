@@ -47,7 +47,7 @@
       <form action = "loginAdministrador.php" method = "POST">
 
         <fieldset>
-          <h2>Administrador<br><br>
+          <h2>Ingresa tus Datos<br><br>
 
 
             <div class="form-group">
@@ -56,7 +56,6 @@
             <div class="form-group">
                <input type = "password" name = "password" id="password" placeholder = "Password" title = "Se necesita un password" required="required" class="form-control input-lg">
             </div>
-
 
            <div class="row">
             
