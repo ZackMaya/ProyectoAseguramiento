@@ -6,7 +6,7 @@ session_start();
 <html lang="es">
 <head>
   <meta charset="utf-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>INTITUCIONES</title>
+  <title>Editar Institución</title>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/estilo.css">
@@ -17,8 +17,7 @@ session_start();
 
 <body>
   	<!-- Cabecera -->
-<header>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
         <div id="menuprincipal">
@@ -41,11 +40,11 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="institucion.php">Insertar Institución</a></li>
-                              <li class="divider"></li>
-                    <li><a href="verinstitucion.php">Ver Institución</a></li>
-                              <li class="divider"></li>
-                    <li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+                  <li><a href="institucion.php">Insertar Institución</a></li>
+                            <li class="divider"></li>
+                  <li><a href="verinstitucion.php">Ver Institución</a></li>
+                            <li class="divider"></li>
+                  <li><a href="buscarinstitucion.php">Editar Institución</a></li>
                 </ul>
               </li>
             </ul>
@@ -60,8 +59,10 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
-        <li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-      </ul>
+              <li>
+                <a href="logout.php"><i title="Cerrar Sesión" class="glyphicon glyphicon-log-out"></i></a>
+              </li>
+             </ul>
         </div>
       </div>
     </nav>

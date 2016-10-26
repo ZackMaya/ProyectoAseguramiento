@@ -11,6 +11,8 @@ session_start();
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<!-- Formulario elaborado con recursos Bootstrap-->
     	<link rel="stylesheet" href="../css/bootstrap.css">
+    	  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
      	<!--estilo-->
      	<link rel="stylesheet" href="../css/estilo.css">
      	<link rel="stylesheet" href="../css/estilos.css">
@@ -20,8 +22,7 @@ session_start();
 	</head>
 <body>
 
-<header>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
         <div id="menuprincipal">
@@ -44,11 +45,11 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-					<li><a href="institucion.php">Insertar Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="verinstitucion.php">Ver Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+        					<li><a href="institucion.php">Insertar Institución</a></li>
+                          	<li class="divider"></li>
+        					<li><a href="verinstitucion.php">Ver Institución</a></li>
+                          	<li class="divider"></li>
+        					<li><a href="buscarinstitucion.php">Editar Institución</a></li>
                 </ul>
               </li>
             </ul>
@@ -63,12 +64,14 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
-				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-			</ul>
+              <li>
+                <a href="logout.php"><i title="Cerrar Sesión" class="glyphicon glyphicon-log-out"></i></a>
+              </li>
+             </ul>
         </div>
       </div>
     </nav>
-  </header>		
+  </header>			
 
 
 		<section class="jumbotron">
@@ -83,12 +86,12 @@ session_start();
 		 <br><br><br>
 		
 		<center>
-		<form action = "borrar.php" method = "post">
-      	<input type="hidden" name="submitted" value="true">
-			<input type="text" name="institucion"/>
-			<input type="submit" value="Eliminar Institución"/>
-		</form>
-		</center><br>
+    <form action = "borrar.php" method = "post">
+        <input type="hidden" name="submitted" value="true">
+      <input type="text" name="nombre"/>
+      <input type="submit" class="btn btn-success" value="Eliminar Institución"/>
+    </form>
+    </center><br>
 
   			<!--Instituciones Registradas-->
 			<div class="divInformacion">
@@ -107,7 +110,7 @@ session_start();
 					</tr>
 						<?php
 							include('conexion.php');
-							$query="SELECT * FROM institucion";
+							$query="SELECT * FROM institucion ORDER BY nombre";
 							$resultado=$con->query($query);
 							while($row=$resultado->fetch_assoc()){
 						?>
@@ -131,7 +134,7 @@ session_start();
 
 			
 			<!--Boton imprimir-->			
-			<center><input type="button" name="imprimir" value="Imprimir"  onClick="window.print();"/></center>
+			<center><input type="button" class="btn btn-primary" name="imprimir" value="Imprimir"  onClick="window.print();"/></center>
 
 			<br><br><br><br><br><br><br><br><br><br><br><br>
 

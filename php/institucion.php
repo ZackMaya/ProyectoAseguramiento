@@ -20,8 +20,7 @@ session_start();
 <body>
 
 <!-- Cabecera -->
-<header>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
 
         <div id="menuprincipal">
@@ -44,11 +43,11 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-					<li><a href="institucion.php">Insertar Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="verinstitucion.php">Ver Institución</a></li>
-                  	<li class="divider"></li>
-					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+                  <li><a href="institucion.php">Insertar Institución</a></li>
+                            <li class="divider"></li>
+                  <li><a href="verinstitucion.php">Ver Institución</a></li>
+                            <li class="divider"></li>
+                  <li><a href="buscarinstitucion.php">Editar Institución</a></li>
                 </ul>
               </li>
             </ul>
@@ -63,12 +62,14 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
-				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
-			</ul>
+              <li>
+                <a href="logout.php"><i title="Cerrar Sesión" class="glyphicon glyphicon-log-out"></i></a>
+              </li>
+             </ul>
         </div>
       </div>
     </nav>
-  </header>		
+  </header>  
 
 		<section class="jumbotron">
 		    <div class="container" align="center">
@@ -91,6 +92,14 @@ session_start();
          <h2>Modo Administrador Dar de alta una institución</h2>
   			<br><br>
   			<hr>
+
+
+  			<dd>Pais:</dd>
+    <dd>
+        <select id="pais" name="pais">
+            <option value="0">Selecciona Uno...</option>
+        </select>
+    </dd>
 
 			<!--El id es autoincrement en la Base de Datos no se necesita ingresar-->
 

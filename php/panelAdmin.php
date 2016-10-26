@@ -46,7 +46,7 @@ session_start();
                           	<li class="divider"></li>
         					<li><a href="verinstitucion.php">Ver Institución</a></li>
                           	<li class="divider"></li>
-        					<li><a href="buscarinstitucion.php">Buscar Institución</a></li>
+        					<li><a href="buscarinstitucion.php">Editar Institución</a></li>
                 </ul>
               </li>
             </ul>
@@ -61,7 +61,9 @@ session_start();
               </li>
             </ul>
             <ul class="nav navbar-nav">
-              <li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
+              <li>
+                <a href="logout.php"><i title="Cerrar Sesión" class="glyphicon glyphicon-log-out"></i></a>
+              </li>
              </ul>
         </div>
       </div>
