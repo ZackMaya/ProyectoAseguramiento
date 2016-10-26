@@ -85,15 +85,7 @@ session_start();
 
 		 <br><br><br>
 		
-		<center>
-    <form action = "borrar.php" method = "post">
-        <input type="hidden" name="submitted" value="true">
-      <input type="text" name="nombre"/>
-      <input type="submit" class="btn btn-success" value="Eliminar Institución"/>
-    </form>
-    </center><br>
-
-  			<!--Instituciones Registradas-->
+ 			<!--Instituciones Registradas-->
 			<div class="divInformacion">
 			<center><h2>Instituciones Registradas</h2></center>
 			<center><table border="2">
@@ -103,14 +95,16 @@ session_start();
 						<td>Telefono</td>
 						<td>Correo</td>
 						<td>URL</td>
-						<td>Imagen</td>
 						<td>Descripción</td>
 						<td>País</td>
 						<td>Área</td>
+            <td>Eliminar</td>
+            <td>Editar</td>
 					</tr>
 						<?php
 							include('conexion.php');
-							$query="SELECT * FROM institucion ORDER BY nombre";
+							$query="SELECT * FROM institucion,areaswebook,pais WHERE institucion.area=areaswebook.id_area
+                      AND institucion.pais=pais.id_pais";
 							$resultado=$con->query($query);
 							while($row=$resultado->fetch_assoc()){
 						?>
@@ -119,10 +113,23 @@ session_start();
 						<td><?php echo $row['telefono'];?></td>
 						<td><?php echo $row['correo'];?></td>
 						<td><?php echo $row['url_pagina'];?></td>
-						<td><?php echo $row['url_imagen'];?></td>
 						<td><?php echo $row['descripcion'];?></td>
-						<td><?php echo $row['pais'];?></td>
-						<td><?php echo $row['area'];?></td>
+						<td><?php echo $row['nombrepais'];?></td>
+						<td><?php echo $row['nombrearea'];?></td>
+            <td>
+                <form action = "borrar.php" method = "post">
+                  <input type="hidden" name="submitted" value="true">
+                  <input type="text" name="nombre" placeholder="Nombre Institución" />
+                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-remove'></span></button>
+                </form>
+            </td>
+            <td>
+              <form action = "editar.php" method = "post">
+                  <input type="hidden" name="submitted" value="true">
+                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-pencil'></span></button>
+                </form>
+
+            </td>
 					</tr>
 						<?php
 							}

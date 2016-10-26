@@ -83,14 +83,6 @@ session_start();
 
 		 <br><br><br>
 		
-		<center>
-		<form action = "borrarusuario.php" method = "post">
-      	<input type="hidden" name="submitted" value="true">
-			<input type="text" name="nombre"/>
-			<input type="submit" class="btn btn-success"  value="Eliminar Usuario"/>
-		</form>
-		</center><br>
-
   			<!--Instituciones Registradas-->
 			<div class="divInformacion">
 			<center><h2>Usuarios Registrados</h2></center>
@@ -100,7 +92,8 @@ session_start();
 						<td>Nombre</td>
 						<td>Email</td>
 						<td>Contraseña</td>
-						<td>Es Administrador</td>
+						<td>Eliminar</td>
+            <td>Editar</td>
 					</tr>
 						<?php
 							include('conexion.php');
@@ -112,7 +105,20 @@ session_start();
 						<td><?php echo $row['nombre'];?></td>
 						<td><?php echo $row['correo'];?></td>
 						<td><?php echo $row['contrasenna'];?></td>
-						<td><?php echo $row['es_administrador'];?></td>
+            <td>
+                <form action = "borrarusuario.php" method = "post">
+                  <input type="hidden" name="submitted" value="true">
+                  <input type="text" name="nombre" placeholder="Nombre Usuario" />
+                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-remove'></span></button>
+                </form>
+            </td>
+            <td>
+              <form action = "editarusuario.php" method = "post">
+                  <input type="hidden" name="submitted" value="true">
+                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-pencil'></span></button>
+                </form>
+
+            </td>
 					</tr>
 						<?php
 							}
