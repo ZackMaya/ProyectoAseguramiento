@@ -87,9 +87,6 @@
               <li>
                 <a href="./php/registrousuario.php"><i title="Registro" class="glyphicon glyphicon-check"></i></a>
               </li>
-              <li>
-                <a href="./php/logout.php"><i title="Salir" class="glyphicon glyphicon-log-out"></i></a>
-              </li>
             </ul>
         </div>
       </div>
@@ -185,6 +182,8 @@
         </section>
       </div>
     </section>
+
+
 
     <br><br><br>
 
