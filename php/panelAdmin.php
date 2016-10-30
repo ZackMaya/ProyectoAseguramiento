@@ -45,8 +45,6 @@ session_start();
         					<li><a href="institucion.php">Insertar Institución</a></li>
                           	<li class="divider"></li>
         					<li><a href="verinstitucion.php">Ver Institución</a></li>
-                          	<li class="divider"></li>
-        					<li><a href="buscarinstitucion.php">Editar Institución</a></li>
                 </ul>
               </li>
             </ul>

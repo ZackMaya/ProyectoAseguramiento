@@ -76,13 +76,26 @@ if(!isset($_SESSION["usuario_email"])){
 				<input class="form-control" name="descripcion" type="text" required="required"  placeholder="Descripción" tabindex="6" title="descripción">
 			</div>
 
-					
 			<!--País de la Institución-->
-			<p>(1) México.</p>
-			<p>(2) Estados Unidos.</p>
 			<div class="form-group">
 					<label for="pais">País</label>
-					<input class="form-control" name="pais" type="text" required="required"  placeholder="Seleccione País" tabindex="6" title="País">
+					<form name="combopais">
+				        <select name="pais" class="form-control" tabindex="6">
+				            <option value="" selected>Elige</option>
+				            <?php
+				            include('conexion.php');
+											$query="SELECT * FROM pais
+											ORDER BY nombrepais";
+											$resultado=$con->query($query);
+											while($row=$resultado->fetch_assoc()){
+										?>
+							<option value="<?php echo $row['id_pais']?>"><?php echo $row['id_pais'];?>.- <?php echo $row['nombrepais'];?></option>
+							<?php
+								}
+							?>
+				        </select>
+				       </form>
+					<!--<input class="form-control" name="pais" type="text" required="required"  placeholder="Seleccione País" tabindex="6" title="País">-->
 			</div>
 
 			<!--Telefono-->
@@ -93,7 +106,7 @@ if(!isset($_SESSION["usuario_email"])){
 
 			<!--Correo-->
 			<div class="form-group">
-				<label for="Correo">Correo</label>
+				<label for="correo">Correo</label>
 				<input class="form-control" name="correo" type="text" required="required"  placeholder="Correo" tabindex="6" title="correo">
 			</div>
 
@@ -101,26 +114,24 @@ if(!isset($_SESSION["usuario_email"])){
 			<!--Área-->
 			<div class="form-group">
 				<label for="area">Área</label>
-				<input class="form-control" name="area" type="text" required="required"  placeholder="Seleccione el Área" tabindex="6" title="area">
-				<section style="width: 80%">
-					<p>(1) Requisitos de Software</p>
-		            <p>(2) Diseño de Software</p>
-		            <p>(3) Construcción de Software</p>
-		            <p>(4) Pruebas de Software</p>
-		            <p>(5) Mantenimiento de Software</p>
-		            <p>(6) Gestión de la configuración</p>
-		            <p>(7) Gestión de la Ingeniería de Software</p>
-		            <p>(8) Proceso de Ingeniería de Software</p>
-		            <p>(9) Herramientas y métodos de la Ingeniería de Software</p>
-		            <p>(10)Calidad del Software</p>
-		            <p>(11)Práctica Profesional de la Ingeniería de Software</p>
-		            <p>(12)Economía de la Ingeniería de Software</p>
-		            <p>(13)Fundamentos de Computación</p>
-		            <p>(14)Fundamentos Matemáticos</p>
-		            <p>(15)Fundamentos de Ingeniería</p>
-	            </section>
+				        <select name="area" class="form-control" tabindex="6">
+				            <option value="" selected>Elige</option>
+				            <?php
+				            include('conexion.php');
+											$query="SELECT * FROM areaswebook";
+											$resultado=$con->query($query);
+											while($row=$resultado->fetch_assoc()){
+										?>
+							<option value="<?php echo $row['id_area']?>"><?php echo $row['id_area'];?> .-<?php echo $row['nombrearea'];?></option>
+
+							<?php
+								}
+							?>
+				        </select>
+				<!--<input class="form-control" name="area" type="text" required="required"  placeholder="Seleccione el Área" tabindex="6" title="area">-->
 			</div>
 
+			
 			<!--URL-->
 			<div class="form-group">
 				<label for="url">URL</label>

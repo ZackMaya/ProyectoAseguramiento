@@ -43,11 +43,7 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="institucion.php">Insertar Institución</a></li>
-                            <li class="divider"></li>
-                  <li><a href="verinstitucion.php">Ver Institución</a></li>
-                            <li class="divider"></li>
-                  <li><a href="buscarinstitucion.php">Editar Institución</a></li>
+                  <li><a href="verinstitucion.php">Ver Instituciones</a></li>
                 </ul>
               </li>
             </ul>
@@ -83,11 +79,11 @@ session_start();
 
 		 <br><br><br>
 		
-  			<!--Instituciones Registradas-->
-			<div class="divInformacion">
-			<center><h2>Usuarios Registrados</h2></center>
-			<center><table border="2">
-				<tbody>
+  			<!--Usuarios Registrados-->
+			<div class="table-responsive">
+      <center><h2>Usuarios Registrados</h2></center>
+      <center><table align="center" class="table table-condensed">
+        <tbody>
 					<tr class="encabezado">
 						<td>Nombre</td>
 						<td>Email</td>
@@ -109,13 +105,13 @@ session_start();
                 <form action = "borrarusuario.php" method = "post">
                   <input type="hidden" name="submitted" value="true">
                   <input type="text" name="nombre" placeholder="Nombre Usuario" />
-                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-remove'></span></button>
+                  <button type="submit" class="btn btn-success btn-xs"  class='btn'><span class='glyphicon glyphicon-remove'></span></button>
                 </form>
             </td>
             <td>
               <form action = "editarusuario.php" method = "post">
                   <input type="hidden" name="submitted" value="true">
-                  <button type="submit" class="btn btn-success"  class='btn'><span class='glyphicon glyphicon-pencil'></span></button>
+                  <button type="submit" class="btn btn-success btn-xs"  class='btn'><span class='glyphicon glyphicon-pencil'></span></button>
                 </form>
 
             </td>
@@ -127,7 +123,7 @@ session_start();
 			</table>
 			</center>
 			</div>
-
+<br><br><br><br>
 			
 			<!--Boton imprimir-->			
 			<center><input type="button" class="btn btn-primary" name="imprimir" value="Imprimir"  onClick="window.print();"/></center>
