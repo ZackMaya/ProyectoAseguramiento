@@ -14,11 +14,13 @@
 /*estilo tabla*/
 	table {
 	  border-collapse: collapse;
-	  width: 100%;
+	  width: auto;
+	  height: auto;
 	}
 	th, td {
-	  padding: 0.5rem;
+	  padding: 0.2rem;
 	  border: 1px solid #ccc;
+	  font-size: 13px;
 
 	}
 
@@ -29,28 +31,6 @@
 	  text-align: center;
 	}
 
-	.divInformacion{
-	width: 100%;
-	height: auto;
-	background: transparent;
-	padding: 15px;
-	margin: 5px auto;
-	border: 3px;
-	}
-
-	.divInformacion h1,h2,h3,h4,h5{
-	color:black;
-	}
-
-
-
-	#busqueda{
-		width: 90%;
-		height: auto;
-		background-color: transparent;
-		padding-top: 5%;
-		padding-bottom: 3%;
-	}
 
 /*PIE PAGINA*/
 .pie {
