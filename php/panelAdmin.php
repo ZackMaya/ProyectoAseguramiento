@@ -42,8 +42,6 @@ session_start();
                   Instituciones<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-        					<li><a href="institucion.php">Insertar Institución</a></li>
-                          	<li class="divider"></li>
         					<li><a href="verinstitucion.php">Ver Institución</a></li>
                 </ul>
               </li>

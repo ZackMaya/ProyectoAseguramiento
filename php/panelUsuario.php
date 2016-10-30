@@ -34,7 +34,9 @@ if(!isset($_SESSION["usuario_email"])){
 							$resultado=$con->query($query);
 							while($row=$resultado->fetch_assoc()){
 							echo $row['nombre'];}?></a></li>
-				<li><a href="logout.php" class="button special">Cerrar Sesión</a></li>
+				<li>                
+				<a href="logout.php"><i title="Cerrar Sesión" class="glyphicon glyphicon-log-out"></i></a>
+				</li>
 	          </ul>
 
 	 

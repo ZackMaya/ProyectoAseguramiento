@@ -109,7 +109,7 @@ session_start();
                 </form>
             </td>
             <td>
-              <form action = "editarusuario.php" method = "post">
+              <form action = "#" method = "post">
                   <input type="hidden" name="submitted" value="true">
                   <button type="submit" class="btn btn-success btn-xs"  class='btn'><span class='glyphicon glyphicon-pencil'></span></button>
                 </form>
